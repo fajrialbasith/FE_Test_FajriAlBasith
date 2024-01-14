@@ -1,0 +1,560 @@
+:root {
+    --almond: blanchedalmond;
+    --bg: rgb(59, 96, 81);
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    /* min-height: 2000px; */
+}
+
+section .animate {
+    transition: 1s;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/BG\ Page\ 1.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero p {
+    font-family: 'Poppins', cursive;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.hero h4 {
+    font-size: 1.5rem;
+}
+
+.hero h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3.5rem;
+}
+
+.hero a {
+    color: blanchedalmond;
+    background-color: #405034;
+}
+
+.hero h1 {
+    text-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: blanchedalmond;
+    color: #3e532f;
+}
+
+.sec-1 {
+    background-image: url(img/BG\ Page\ 1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: -4rem;
+}
+
+sec-1 .title-above {
+    margin-top: 40px;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.0rem !important;
+    color: rgb(98, 129, 104);
+}
+
+.sec-1 h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 7.0rem;
+    color: rgb(98, 129, 104);
+
+}
+
+.sec-1 h2 {
+    color: var(--bg);
+    font-family: 'Poppins';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* .sec-1 .animate-rotate {
+    opacity: 0%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-1 h3 {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(98, 129, 104);
+} */
+
+.circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -55deg;
+    margin-top: 65px;
+
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-weight: bold;
+    font-family: serif;
+    /* animation : rotating 4s linear */
+}
+
+.text span {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    font-size: 1.7rem;
+    transform-origin: 0 100px;
+}
+
+
+.sec-1 h4 {
+    border: 2px solid #8c9f73;
+    margin-top: 20px;
+    font-family: poppins;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    display: inline;
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-1 h5 {
+    margin-top: 20px;
+    font-family: poppins;
+    font-size: 1.5rem;
+    font-weight: light;
+    display: flex;
+    justify-content: center;
+    color: rgb(123, 162, 131);
+}
+
+.sec-1 .animate {
+    opacity: 0;
+}
+
+.sec-1 .animate-title {
+    opacity: 0%;
+}
+
+.sec-1 .text {
+    opacity: 0%;
+}
+
+.sec-1.show-animate .text {
+    animation: fadings 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate {
+    animation: fadings 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-rotate {
+    animation: fadings 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-title {
+    animation: fadings 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-date {
+    animation: fadings 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-attendance {
+    animation: fadings 3s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-flower-1 {
+    animation: grow 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-flower-2 {
+    animation: grow-2 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-1.show-animate .animate-flower-3 {
+    animation: grotate 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.sec-1.animate .profile {
+    border-radius: 200px;
+    border: 2px solid #8c9f73;
+    width: 55%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+
+.sec-2 h1 {
+    margin-top: 40px;
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #a5740c;
+    font-style: italic;
+}
+
+.sec-2 h2 {
+    margin-top: 30px;
+    font-family: serif;
+    font-size: 5rem;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    color: rgb(98, 129, 104);
+}
+
+.sec-2 h3 {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: poppins;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(123, 162, 131);
+}
+
+.sec-2 h4 {
+    margin-top: 5px;
+    padding-left: 27px;
+    padding-right: 27px;
+    font-family: poppins;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(123, 162, 131);
+}
+
+.sec-2 {
+    background-image: url(img/BG\ Page\ 2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.sec-2.show-animate .animate {
+    animation: fadings 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-2.show-animate .animate-name-1 {
+    animation: fadings 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-2.show-animate .animate-name-2 {
+    animation: fadings 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-2.show-animate .animate-flower-1 {
+    animation: grow-3 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-2.show-animate .animate-flower-3 {
+    animation: grotate 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sec-3 {
+    background-color: var(--bg);
+    color: var(--almond);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.sec-3 h2 {
+    color: mintcream;
+    font-family: 'Brush Script MT';
+    font-size: 5rem;
+    font-weight: bolds;
+}
+
+.alamat {
+    font-size: 1.1rem;
+}
+
+.sec-3 .description {
+    font-size: 1rem;
+}
+
+.sec-3 .card {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid #999;
+}
+
+.sec-3 .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.sec-3 .card-body {
+    font-size: 1rem;
+}
+
+.sec-3 .card-footer {
+    border-top: 1px solid #999;
+    font-size: 1rem;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.sticky-top {
+    overflow: hidden;
+}
+
+.offcanvas {
+    height: 100vh;
+}
+
+
+.offcanvas-header h5 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.0rem;
+}
+
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5rem;
+}
+
+.navbar-nav a {
+    display: flex;
+    justify-content: center;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes fadings {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+
+}
+
+@keyframes grow-2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 65%;
+    }
+
+}
+
+@keyframes grow-3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+
+}
+
+@keyframes grotate {
+    from {
+        width: 0;
+        transform: rotate(0);
+    }
+
+    to {
+        width: 23%;
+        transform: rotate(370deg);
+    }
+
+}
+
+/* media query */
+/* laptop */
+@media (max-width:992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 70px;
+        margin: 10px;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 40%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 30px;
+        margin: 1px;
+    }
+}
